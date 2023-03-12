@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+</head>
+<body>
+        <h2>Contact Us</h2>
+        <hr>
+        <h3>Telephone No</h3>
+        <ul>
+                <li><strong>09072552496</strong></li>
+                <li><strong>08112457495</strong></li>
+        </ul> 
+         <hr>
+        <h3>My address</h3>
+            <address>
+                No 290 Ikorodu rd,<br>
+                Idiroko bustop, Maryland,<br>
+                Ikeja, Lagos, Nigeria.<br>
+            </address>
+            <hr>
+
+            <!-- Here we can use 2 types of methods when submitting a form to a server which are the POST and  GET
+                method = "Post" : this attribute will enable our form to be submitted to a server and also protect and secure our details(input) that were filled
+                into the form page. it is mostly used when details to be filled are confidential,
+
+                method = "Get" : this attribute will enable our form to be sumitted to a server but it will display all the inputs entered by a user on the browser
+                tab thereby revealing all the details... which can be risky..... It is mostly used when there are no confidential to be submited or collected 
+                -->
+            
+            <form method="post">
+                    <label for="name">Firstname</label>
+                    <input type="text" name="fname" id="fname"> <br> <br>
+
+                    <label for="name">Lastame</label>
+                    <input type="text" name="lname" id="lname">
+                    
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" size="15"> <br> <br>
+
+                    <label for="Telephone">Telephone</label>
+                    <input type="tel" name="Telephone" id="Telephone"> <br> <br>
+
+                    <label for="search-box">Search</label>
+                    <input type="search" name="search" id="search" size="15"> <br> <br>
+
+                    <label for="text">Comment</label>
+                    <input type="text" name="Comment" id="Comment" size="100"> <br> <br>
+
+                    <h3>Choose your favourite Programming language</h3>
+                    <input type="radio" name="Fav-lang" id="Javascript"> 
+                    <label for="name">Javascript</label><br> <br>
+
+                    <input type="radio" name="Fav-lang" id="Python"> 
+                    <label for="name">Python</label><br> <br>
+
+                    <input type="radio" name="Fav-lang" id="Java"> 
+                    <label for="name">Java</label><br><br>
+
+                    <label for="fileinput">File input</label>
+                    <input type="file" multiple capture="user" name="fileinput" id="fileinput">
+                    <!-- The multiple attribute allows users to input all kind of files
+                        The capture attribute value is a string that specifies which camera to use for capture of image or video data, if the accept attribute indicates that the
+                     input should be of one of those types. A value of user indicates that the user-facing camera and/or microphone should be used. A value of environment specifies that the outward-facing camera and/or microphone should be used. 
+                    If this attribute is missing, the user agent is free to decide on its own what to do -->
+
+                    <label for="month">Birth Month</label>
+                    <input type="month" name="month" id="month" max="15"> <br><br>
+
+                    <label for="number">Choose a number</label>
+                    <input type="number" name="number" id="number" max="15"> <br><br>
+
+                    <input type="file" accept="multiple" name="file" id="file"><br><br>
+
+                    <input type="submit" value="submit"> 
+            </form>
+
+            <table>
+
+                    <table style=" border: 1px solid red; display: inline;" >
+                        <thead>
+                                <th colspan="2" align="center">Skills</th>
+                                <th colspan="2" align="center">Mastery Level</th>
+                        </thead>
+                        <tr class="one">
+                                <td><strong>Html</strong></td>
+                                <td> ⭐ ⭐ ⭐ ⭐ ⭐</td>
+                        </tr>
+                        <tr >
+                            <td><strong>Graphics Design</strong></td>
+                            <td> ⭐ ⭐ ⭐ ⭐ ⭐</td>
+                    </tr>
+                    <tr class="one">
+                        <td><strong>C</strong></td>
+                        <td> ⭐ ⭐ ⭐ ⭐ </td>
+                    </tr>
+                </table>
+
+                <table style="display: inline;">
+                    <thead>
+                            <th align="center">Skills</th>
+                            <th align="center">Mastery Level</th>
+                    </thead>
+                    <tr class="one">
+                            <td><strong>Skating</strong></td>
+                            <td> ⭐ ⭐ ⭐ ⭐ ⭐</td>
+                    </tr>
+                    <tr >
+                        <td><strong>Drumming</strong></td>
+                        <td> ⭐ ⭐ ⭐ ⭐</td>
+                </tr>
+                <tr class="one">
+                    <td><strong>Javascript</strong></td>
+                    <td> ⭐ ⭐ ⭐  </td>
+                </tr>
+            </table>
+
+        </table>
+</body>
+</html>

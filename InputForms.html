@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Create Account</h1>
+
+        <form method="post" action="mailto:samuelitoje8@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Firstname</label>
+            <input type="text" name="fname" id="fname" required > <br> <br>
+
+            <label for="name">Lastame</label>
+            <input type="text" name="lname" id="lname" readonly placeholder="John"> <br> <br> 
+            <!--the "readonly" attribute is used to allow the user to only read about the info written there by the developer. it is usally not editable.
+                 the "placeholder" attribute is used to give hint to the user on the input needed in that field it is editable -->
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" size="15"> <br> <br>
+
+            <label for="Telephone">Telephone</label>
+            <input type="tel" name="Telephone" id="Telephone"> <br> 
+
+            <h3>Choose your favourite Programming language</h3>
+            <input type="radio" name="Fav-lang" id="Javascript"> 
+            <label for="name">Javascript</label><br> <br>
+
+            <input type="radio" name="Fav-lang" id="Python"> 
+            <label for="name">Python</label><br> <br>
+
+            <input type="radio" name="Fav-lang" id="Java"> 
+            <label for="name">Java</label><br><br>
+            <!-- The multiple attribute allows users to input all kind of files
+                The capture attribute value is a string that specifies which camera to use for capture of image or video data, if the accept attribute indicates that the
+             input should be of one of those types. A value of user indicates that the user-facing camera and/or microphone should be used. A value of environment specifies that the outward-facing camera and/or microphone should be used. 
+            If this attribute is missing, the user agent is free to decide on its own what to do -->
+
+            <label for="month">Birth Month</label>
+            <input type="month" name="month" id="month" max="12"> <br><br>
+
+            <label for="Comment">Enter a comment:</label><br><br>
+            <textarea name="comment" rows="10" cols="30"></textarea><br>
+
+            <label for="number">Choose a favourite number</label>
+            <input type="number" name="number" id="number" max="15"> <br><br>
+
+            <label for="height">What is your approximate height</label>
+            <input type="number" name="height" id="height" min="3" max="15" step="0.2" title="Input your current age👍"> <br><br>
+            <!--do u know that the step attribue can increase by decimal point with input types like date, month, week, time, datetime-local, number, 
+                and range with also the min and max attribute-->
+
+            <input type="submit" value="Submit" formaction="mailto:samuelitoje8@gmail.com" formmethod="post"> 
+    </form>
+    </body>
+</html>
